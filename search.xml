@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[css3手札]]></title>
-      <url>http://tinjian.com/2017/02/26/css3%E6%89%8B%E6%9C%AD/</url>
+      <url>http://blog.letzgo.ink/2017/02/26/css3%E6%89%8B%E6%9C%AD/</url>
       <content type="html"><![CDATA[<h3 id="CSS3新增常用"><a href="#CSS3新增常用" class="headerlink" title="CSS3新增常用"></a>CSS3新增常用</h3><pre><code class="css">box-shadow:X轴偏移量 Y轴偏移量阴影模糊半径 阴影扩展半径 阴影颜色;
 
 border-color:上下左右
@@ -121,7 +121,7 @@ border-radius: 0 0 0 4px;(上下左右);
     
     <entry>
       <title><![CDATA[细说ES6]]></title>
-      <url>http://tinjian.com/2016/09/15/%CF%B8%CB%B5ES6/</url>
+      <url>http://blog.letzgo.ink/2016/09/15/%CF%B8%CB%B5ES6/</url>
       <content type="html"><![CDATA[<h3 id="import、export、export-default"><a href="#import、export、export-default" class="headerlink" title="import、export、export default"></a>import、export、export default</h3><h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><ol>
 <li>import 是 ES6的引入方式,在正式部署的生产环境中默认会去node_modules文件夹下查找,所以你查找当前目录下的模块的时候必须使用 ‘./‘</li>
 <li><p>无对象导入:如果模块包含一些逻辑要执行，且不会导出任何对象，此类对象也可以被导入到另一模块中。如案例所示：</p>
@@ -168,7 +168,7 @@ border-radius: 0 0 0 4px;(上下左右);
     
     <entry>
       <title><![CDATA[jquery开发规范]]></title>
-      <url>http://tinjian.com/2016/02/17/jquery%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</url>
+      <url>http://blog.letzgo.ink/2016/02/17/jquery%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</url>
       <content type="html"><![CDATA[<h3 id="使用闭包"><a href="#使用闭包" class="headerlink" title="使用闭包"></a>使用闭包</h3><pre><code class="js">(function($){
     //Code goes here
 })(jQuery);
@@ -310,7 +310,7 @@ $(function() {
     
     <entry>
       <title><![CDATA[react 的ES5和ES6写法对比]]></title>
-      <url>http://tinjian.com/2016/02/14/react-%E7%9A%84ES5%E5%92%8CES6%E5%86%99%E6%B3%95%E5%AF%B9%E6%AF%94/</url>
+      <url>http://blog.letzgo.ink/2016/02/14/react-%E7%9A%84ES5%E5%92%8CES6%E5%86%99%E6%B3%95%E5%AF%B9%E6%AF%94/</url>
       <content type="html"><![CDATA[<p>在javascript正式进入ES6时代后，react的语法也与时俱进的进行了大革新。这让很多初学者出现对ES6的困惑，今天在此整理了一些ES5和ES6的写法对照表，互相学习共勉。<br><a id="more"></a></p>
 <h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><blockquote>
 <p>引用</p>
@@ -625,7 +625,7 @@ class PauseMenu extends React.Component{
     
     <entry>
       <title><![CDATA[10分钟入门flex,轻松搭建flex框架]]></title>
-      <url>http://tinjian.com/2016/01/12/30%E5%88%86%E9%92%9F%E5%85%A5%E9%97%A8%E8%BD%BB%E6%9D%BE%E6%9E%B6%E6%9E%84flex%E6%A1%86%E6%9E%B6/</url>
+      <url>http://blog.letzgo.ink/2016/01/12/30%E5%88%86%E9%92%9F%E5%85%A5%E9%97%A8%E8%BD%BB%E6%9D%BE%E6%9E%B6%E6%9E%84flex%E6%A1%86%E6%9E%B6/</url>
       <content type="html"><![CDATA[<h3 id="flex介绍"><a href="#flex介绍" class="headerlink" title="flex介绍"></a>flex介绍</h3><p>WEB布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性。对于PC端的网页来讲，确实游刃有余。<br>进入移动互联网之后，人们开始发现类似让图片居中的东东很难完美实现。<br>于是2010年W3C提出的一种新的方案——flex，目前在移动端已经广泛运用。类似腾讯的小程序weui，阿里的antui，等等都已经将flex纳入自己的UI框架中。<br><a id="more"></a></p>
 <div class="tip">注意啦，目前flex仅仅推荐用在移动端，pc端还是乖乖的用盒状模型吧！万恶的IE👿</div> 
 
@@ -821,7 +821,7 @@ class PauseMenu extends React.Component{
     
     <entry>
       <title><![CDATA[sublime编辑器前端开发使用]]></title>
-      <url>http://tinjian.com/2015/12/29/sublime%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+      <url>http://blog.letzgo.ink/2015/12/29/sublime%E7%BC%96%E8%BE%91%E5%99%A8%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h4 id="前话"><a href="#前话" class="headerlink" title="前话"></a>前话</h4><p>一路走来，代码编辑器用了不下4个，从最早刚出道的时候的DW,到后来的WEBSTORM，这个编辑器用了很长时间，非常的强大，但是，但是，太耗内存了，于是想找个轻便的编辑器，上网搜罗，接着就是用了github开发的ATOM。当时看上纯粹就是‘哇！好好看的样子’。用着其实也还好，但是偶尔的时候会鬼畜。接下来说到正主——sublime。这个编辑其实老早之前用过一会，但是那会是小白，‘怎么用一个编辑器还这么麻烦？插件满天飞，配置也几乎都是英文的看不懂，后来就果断放弃了’。但是真正开始用的时候发现。确实很好用。功能强大至于也非常流畅。<br><a id="more"></a></p>
 <h4 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h4><p>接下来不废话了，讲讲sublime的配置。首先是core_setting,快捷键是’cmd+,’,弹出界面，设置你需要的基本配置。比如字体，间距，主题，等等。下面是我的配置。这里就略过了，英文不好的去找翻译。</p>
 <pre><code class="javascript">{
@@ -1088,7 +1088,7 @@ curly 的意思是循环或者条件语句必须使用花括号包围<br>eqeqeq 
     
     <entry>
       <title><![CDATA[git-基本命令]]></title>
-      <url>http://tinjian.com/2015/12/21/git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
+      <url>http://blog.letzgo.ink/2015/12/21/git-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</url>
       <content type="html"><![CDATA[<h4 id="git-基本"><a href="#git-基本" class="headerlink" title="git 基本"></a>git 基本</h4><pre><code class="bash">git仓库初始化：git init
 
 检出仓库：git clone
@@ -1143,7 +1143,7 @@ push分支到远程：$ git push origin [name]
     
     <entry>
       <title><![CDATA[MAC系统制作U盘安装盘教程]]></title>
-      <url>http://tinjian.com/2015/09/21/MAC%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9CU%E7%9B%98%E5%AE%89%E8%A3%85%E7%9B%98%E6%95%99%E7%A8%8B/</url>
+      <url>http://blog.letzgo.ink/2015/09/21/MAC%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9CU%E7%9B%98%E5%AE%89%E8%A3%85%E7%9B%98%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
 <li>U盘 16G以上（想要快请用 USB3.0）<div class="tip"><br> U盘的卷标名不要用中文！任何英文都可以。<br></div></li>
 <li>在 app store 中下载最新的 os X 系统，我这里下载的 OS X Yosemite.app，下面的内容我仍然用此为例<a id="more"></a>
@@ -1178,7 +1178,7 @@ push分支到远程：$ git push origin [name]
     
     <entry>
       <title><![CDATA[10分钟用HEXO搭建个人博客]]></title>
-      <url>http://tinjian.com/2015/09/15/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      <url>http://blog.letzgo.ink/2015/09/15/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h4 id="1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）"><a href="#1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）" class="headerlink" title="1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）"></a>1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）</h4><p><div class="tip"><br>    这里需要注明的是，你在GitHub里新建项目的时候，你的项目名必须和你的用户名相同。完成后你可以通过 username.github.io 这个二级域名来访问你的博客。如果你想通过你自己的独立域名重定向到 博客。需要 在项目的 setting 中的 Custom domain 设置你的独立域名。<br>    <img src="http://ohwq8bodu.bkt.clouddn.com/blog/201612090305.png" alt="image"><br>    当然你自己的域名也必须设置 CNAME 访问，这里不做过多赘述。<br></div><br><a id="more"></a></p>
 <h4 id="2-正式安装HEXO"><a href="#2-正式安装HEXO" class="headerlink" title="2.正式安装HEXO"></a>2.正式安装HEXO</h4><pre><code class="BASH">$ sudo npm install -g hexo
 </code></pre>
@@ -1220,7 +1220,7 @@ hexo deploy             //将静态文件git push 到你的博客程序
     
     <entry>
       <title><![CDATA[linux常用命令]]></title>
-      <url>http://tinjian.com/2014/12/22/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      <url>http://blog.letzgo.ink/2014/12/22/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       <content type="html"><![CDATA[<h3 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h3><pre><code class="bash"># 移动某文件/文件夹到 某目录
 mv phpmyadmin ../blog/  
 # 删除某文件/文件/全部文件
@@ -1266,7 +1266,7 @@ chsh -s /usr/bin/fish
     
     <entry>
       <title><![CDATA[js原理进阶]]></title>
-      <url>http://tinjian.com/2014/08/02/js%E5%8E%9F%E7%90%86%E8%BF%9B%E9%98%B6/</url>
+      <url>http://blog.letzgo.ink/2014/08/02/js%E5%8E%9F%E7%90%86%E8%BF%9B%E9%98%B6/</url>
       <content type="html"><![CDATA[<h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><h4 id="封装，Prototype模式"><a href="#封装，Prototype模式" class="headerlink" title="封装，Prototype模式"></a>封装，Prototype模式</h4><p>Javascript规定，每一个构造函数都有一个<strong>prototype属性</strong>，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。这意味着，我们可以把那些不变的属性和方法，直接定义在prototype对象上。<br><a id="more"></a></p>
 <pre><code class="javascript">function Cat(name,color){
     this.name = name;
@@ -1422,7 +1422,7 @@ x // undefined
     
     <entry>
       <title><![CDATA[JS构造函数实例]]></title>
-      <url>http://tinjian.com/2014/02/21/JS%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AE%9E%E4%BE%8B/</url>
+      <url>http://blog.letzgo.ink/2014/02/21/JS%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%AE%9E%E4%BE%8B/</url>
       <content type="html"><![CDATA[<h3 id="构造函数定义"><a href="#构造函数定义" class="headerlink" title="构造函数定义"></a>构造函数定义</h3><blockquote>
 <p>JS的构造函数在设计之初一直有不少坑，很多人难以理解它的设计模式，这里将本人对JS的构造函数的理解分享给大家，如果有错误请指正。  </p>
 <p><strong>构造函数的定义</strong>：对象自身所带的属性。  </p>
@@ -1548,7 +1548,7 @@ Atest.age = 20;//公有静态属性不能使用 【this.属性】，只能使用
     
     <entry>
       <title><![CDATA[js常用方法大全(不断更新...)]]></title>
-      <url>http://tinjian.com/2013/01/04/js%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E5%A4%A7%E5%85%A8/</url>
+      <url>http://blog.letzgo.ink/2013/01/04/js%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E5%A4%A7%E5%85%A8/</url>
       <content type="html"><![CDATA[<h4 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h4><ul>
 <li><strong>arr.slice(begin,end)</strong><blockquote>
 <p>截取数组,包左不包右</p>
