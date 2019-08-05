@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -54,25 +55,40 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description=""></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="message" data-title="message" data-url="http://www.letzgo.ink/message/index.html"></div>
 	<script type="text/javascript">
@@ -88,14 +104,14 @@
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -106,9 +122,9 @@
 		
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

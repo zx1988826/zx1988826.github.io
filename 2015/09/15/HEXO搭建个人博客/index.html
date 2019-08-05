@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h4 id="1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）"><a href="#1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）" class="headerlink" title="1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）"></a>1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）</h4><p><div class="tip"><br>    这里需要注明的是，你在GitHub里新建项目的时候，你的项目名必须和你的用户名相同。完成后你可以通过 username.github.io 这个二级域名来访问你的博客。如果你想通过你自己的独立域名重定向到 博客。需要 在项目的 setting 中的 Custom domain 设置你的独立域名。<br>    <img src="http://ohwq8bodu.bkt.clouddn.com/blog/201612090305.png" alt="image"><br>    当然你自己的域名也必须设置 CNAME 访问，这里不做过多赘述。<br></div><br><a id="more"></a></p>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h4 id="1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）"><a href="#1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）" class="headerlink" title="1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）"></a>1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）</h4><p><div class="tip"><br>    这里需要注明的是，你在GitHub里新建项目的时候，你的项目名必须和你的用户名相同。完成后你可以通过 username.github.io 这个二级域名来访问你的博客。如果你想通过你自己的独立域名重定向到 博客。需要 在项目的 setting 中的 Custom domain 设置你的独立域名。<br>    <img src="http://ohwq8bodu.bkt.clouddn.com/blog/201612090305.png" alt="image"><br>    当然你自己的域名也必须设置 CNAME 访问，这里不做过多赘述。<br></div><br><a id="more"></a></p>
 <h4 id="2-正式安装HEXO"><a href="#2-正式安装HEXO" class="headerlink" title="2.正式安装HEXO"></a>2.正式安装HEXO</h4><pre><code class="BASH">$ sudo npm install -g hexo
 </code></pre>
 <h4 id="3-cd到目录并且初始化"><a href="#3-cd到目录并且初始化" class="headerlink" title="3.cd到目录并且初始化"></a>3.cd到目录并且初始化</h4><pre><code class="BASH">hexo init
@@ -85,21 +86,36 @@ hexo generate           //生成静态文件
 hexo deploy             //将静态文件git push 到你的博客程序
 </code></pre>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="1.安装NODE,安装GIT,申请GitHub（此处省..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="HEXO搭建个人博客" data-title="10分钟用HEXO搭建个人博客" data-url="http://www.letzgo.ink/2015/09/15/HEXO搭建个人博客/"></div>
 	<script type="text/javascript">
@@ -115,14 +131,14 @@ hexo deploy             //将静态文件git push 到你的博客程序
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -133,9 +149,9 @@ hexo deploy             //将静态文件git push 到你的博客程序
 		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-安装NODE-安装GIT-申请GitHub（此处省略一万字，不知道的自行谷歌）"><span class="toc-text">1.安装NODE,安装GIT,申请GitHub（此处省略一万字，不知道的自行谷歌）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-正式安装HEXO"><span class="toc-text">2.正式安装HEXO</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-cd到目录并且初始化"><span class="toc-text">3.cd到目录并且初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-本地启动-浏览器输入-http-localhost-4000-访问，这时候你就可以看到的blog程序的主页了"><span class="toc-text">4.本地启动(浏览器输入 http://localhost:4000 访问，这时候你就可以看到的blog程序的主页了)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-新建文章"><span class="toc-text">5.新建文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-生成静态文件至public目录"><span class="toc-text">6.生成静态文件至public目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-建立快捷的github部署"><span class="toc-text">7.建立快捷的github部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-这时候找到根目录下-config-yml配置文件-将repository的路径引导到你的github的博客路径上"><span class="toc-text">8.这时候找到根目录下_config.yml配置文件,将repository的路径引导到你的github的博客路径上</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-一切大功告成，现在让我们完整执行一下。"><span class="toc-text">9.一切大功告成，现在让我们完整执行一下。</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

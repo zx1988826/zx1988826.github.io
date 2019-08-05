@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h3 id="import、export、export-default"><a href="#import、export、export-default" class="headerlink" title="import、export、export default"></a>import、export、export default</h3><h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><ol>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h3 id="import、export、export-default"><a href="#import、export、export-default" class="headerlink" title="import、export、export default"></a>import、export、export default</h3><h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><ol>
 <li>import 是 ES6的引入方式,在正式部署的生产环境中默认会去node_modules文件夹下查找,所以你查找当前目录下的模块的时候必须使用 ‘./‘</li>
 <li><p>无对象导入:如果模块包含一些逻辑要执行，且不会导出任何对象，此类对象也可以被导入到另一模块中。如案例所示：</p>
 <pre><code class="js">import &#39;./module1.js&#39;
@@ -90,21 +91,36 @@
 </blockquote>
 <h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h4 id="异步和同步"><a href="#异步和同步" class="headerlink" title="异步和同步"></a>异步和同步</h4><p>Javascript语言的执行环境是”单线程”（single thread）。<br>所谓”单线程”，就是指一次只能完成一件任务。如果有多个任务，就必须排队，前面一个任务完成，再执行后面一个任务，以此类推。<br>这种模式的好处是实现起来比较简单，执行环境相对单纯；坏处是只要有一个任务耗时很长，后面的任务都必须排队等着，会拖延整个程序的执行。常见的浏览器无响应（假死），往往就是因为某一段Javascript代码长时间运行（比如死循环），导致整个页面卡在这个地方，其他任务无法执行。<br>为了解决这个问题，Javascript语言将任务的执行模式分成两种：同步（Synchronous）和异步（Asynchronous）。<br>“同步模式”就是上一段的模式，后一个任务等待前一个任务结束，然后再执行，程序的执行顺序与任务的排列顺序是一致的、同步的；”异步模式”则完全不同，每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。<br>“异步模式”非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。在服务器端，”异步模式”甚至是唯一的模式，因为执行环境是单线程的，如果允许同步执行所有http请求，服务器性能会急剧下降，很快就会失去响应。  </p>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description=""></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="ϸ˵ES6" data-title="细说ES6" data-url="http://www.letzgo.ink/2016/09/15/ϸ˵ES6/"></div>
 	<script type="text/javascript">
@@ -120,14 +136,14 @@
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -138,9 +154,9 @@
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#import、export、export-default"><span class="toc-text">import、export、export default</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#import"><span class="toc-text">import</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#export-和-export-default"><span class="toc-text">export 和 export default</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#promise"><span class="toc-text">promise</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#异步和同步"><span class="toc-text">异步和同步</span></a></li></ol></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
 <li>U盘 16G以上（想要快请用 USB3.0）<div class="tip"><br> U盘的卷标名不要用中文！任何英文都可以。<br></div></li>
 <li>在 app store 中下载最新的 os X 系统，我这里下载的 OS X Yosemite.app，下面的内容我仍然用此为例<a id="more"></a>
 <h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3></li>
@@ -76,22 +77,37 @@
 </ol>
 <h3 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h3><p>请重启并按Option键，选择安装盘安装即可以。</p>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="准备工作
 U盘 16G以上（想要快请用 USB3.0）..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="MAC系统制作U盘安装盘教程" data-title="MAC系统制作U盘安装盘教程" data-url="http://www.letzgo.ink/2015/09/21/MAC系统制作U盘安装盘教程/"></div>
 	<script type="text/javascript">
@@ -107,14 +123,14 @@ U盘 16G以上（想要快请用 USB3.0）..."></div>
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -125,9 +141,9 @@ U盘 16G以上（想要快请用 USB3.0）..."></div>
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工作"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始"><span class="toc-text">开始</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装完成"><span class="toc-text">安装完成</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

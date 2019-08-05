@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -74,18 +75,18 @@
     <div class="columns">
         <div class="column two-thirds">
             
-                  <article id="post-ϸ˵ES6" class="repo-list">
-    <div class="repo-list-item" >
-      <h3 class="repo-list-name" itemprop="name">
-        
+                <article id="post-ϸ˵ES6" class="repo-list">
+  <div class="repo-list-item">
+    <h3 class="repo-list-name" itemprop="name">
+      
   
       <a class="article-title" href="/2016/09/15/ϸ˵ES6/">细说ES6</a>
   
 
-      </h3>
-      <div class="repo-list-description">
-        
-          <h3 id="import、export、export-default"><a href="#import、export、export-default" class="headerlink" title="import、export、export default"></a>import、export、export default</h3><h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><ol>
+    </h3>
+    <div class="repo-list-description">
+      
+      <h3 id="import、export、export-default"><a href="#import、export、export-default" class="headerlink" title="import、export、export default"></a>import、export、export default</h3><h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><ol>
 <li>import 是 ES6的引入方式,在正式部署的生产环境中默认会去node_modules文件夹下查找,所以你查找当前目录下的模块的时候必须使用 ‘./‘</li>
 <li><p>无对象导入:如果模块包含一些逻辑要执行，且不会导出任何对象，此类对象也可以被导入到另一模块中。如案例所示：</p>
 <pre><code class="js">import &#39;./module1.js&#39;
@@ -113,144 +114,144 @@
 </blockquote>
 <h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h4 id="异步和同步"><a href="#异步和同步" class="headerlink" title="异步和同步"></a>异步和同步</h4><p>Javascript语言的执行环境是”单线程”（single thread）。<br>所谓”单线程”，就是指一次只能完成一件任务。如果有多个任务，就必须排队，前面一个任务完成，再执行后面一个任务，以此类推。<br>这种模式的好处是实现起来比较简单，执行环境相对单纯；坏处是只要有一个任务耗时很长，后面的任务都必须排队等着，会拖延整个程序的执行。常见的浏览器无响应（假死），往往就是因为某一段Javascript代码长时间运行（比如死循环），导致整个页面卡在这个地方，其他任务无法执行。<br>为了解决这个问题，Javascript语言将任务的执行模式分成两种：同步（Synchronous）和异步（Asynchronous）。<br>“同步模式”就是上一段的模式，后一个任务等待前一个任务结束，然后再执行，程序的执行顺序与任务的排列顺序是一致的、同步的；”异步模式”则完全不同，每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数，后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。<br>“异步模式”非常重要。在浏览器端，耗时很长的操作都应该异步执行，避免浏览器失去响应，最好的例子就是Ajax操作。在服务器端，”异步模式”甚至是唯一的模式，因为执行环境是单线程的，如果允许同步执行所有http请求，服务器性能会急剧下降，很快就会失去响应。  </p>
 
-        
-      </div>
-      <p class="repo-list-meta">
-        <span class="meta-info">
-          <span class="octicon octicon-calendar"></span>
-           <time datetime="2016-09-15T06:36:47.000Z" itemprop="datePublished">2016-09-15</time>
-        </span>
+      
+    </div>
+    <p class="repo-list-meta">
+      <span class="meta-info">
+        <span class="octicon octicon-calendar"></span>
+        <time datetime="2016-09-15T06:36:47.000Z" itemprop="datePublished">2016-09-15</time>
+      </span>
 
-        
-          <span class="meta-info">
-            <span class="octicon octicon-file-directory"></span>
-            <a href='/categories/javascript/' title=''>javascript</a>
-          </span>
-        
+      
+      <span class="meta-info">
+        <span class="octicon octicon-file-directory"></span>
+        <a href='/categories/javascript/' title=''>javascript</a>
+      </span>
+      
       
         <!--
           
-            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li></ul>
-          
-        -->
+      <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/">Javascript</a></li></ul>
+      
+      -->
 
-      </p>
-    </div>
-  </article>
+    </p>
+  </div>
+</article>
             
-                  <article id="post-jquery开发规范" class="repo-list">
-    <div class="repo-list-item" >
-      <h3 class="repo-list-name" itemprop="name">
-        
+                <article id="post-jquery开发规范" class="repo-list">
+  <div class="repo-list-item">
+    <h3 class="repo-list-name" itemprop="name">
+      
   
       <a class="article-title" href="/2016/02/17/jquery开发规范/">jquery开发规范</a>
   
 
-      </h3>
-      <div class="repo-list-description">
-        
-          <h3 id="使用闭包"><a href="#使用闭包" class="headerlink" title="使用闭包"></a>使用闭包</h3><pre><code class="js">(function($){
+    </h3>
+    <div class="repo-list-description">
+      
+      <h3 id="使用闭包"><a href="#使用闭包" class="headerlink" title="使用闭包"></a>使用闭包</h3><pre><code class="js">(function($){
     //Code goes here
 })(jQuery);
 </code></pre>
-        
-      </div>
-      <p class="repo-list-meta">
-        <span class="meta-info">
-          <span class="octicon octicon-calendar"></span>
-           <time datetime="2016-02-17T13:01:23.000Z" itemprop="datePublished">2016-02-17</time>
-        </span>
+      
+    </div>
+    <p class="repo-list-meta">
+      <span class="meta-info">
+        <span class="octicon octicon-calendar"></span>
+        <time datetime="2016-02-17T13:01:23.000Z" itemprop="datePublished">2016-02-17</time>
+      </span>
 
-        
-          <span class="meta-info">
-            <span class="octicon octicon-file-directory"></span>
-            <a href='/categories/javascript/' title=''>javascript</a>
-          </span>
-        
+      
+      <span class="meta-info">
+        <span class="octicon octicon-file-directory"></span>
+        <a href='/categories/javascript/' title=''>javascript</a>
+      </span>
+      
       
         <!--
           
-            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
-          
-        -->
+      <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jquery/">jquery</a></li></ul>
+      
+      -->
 
-      </p>
-    </div>
-  </article>
+    </p>
+  </div>
+</article>
             
-                  <article id="post-react-的ES5和ES6写法对比" class="repo-list">
-    <div class="repo-list-item" >
-      <h3 class="repo-list-name" itemprop="name">
-        
+                <article id="post-react-的ES5和ES6写法对比" class="repo-list">
+  <div class="repo-list-item">
+    <h3 class="repo-list-name" itemprop="name">
+      
   
       <a class="article-title" href="/2016/02/14/react-的ES5和ES6写法对比/">react 的ES5和ES6写法对比</a>
   
 
-      </h3>
-      <div class="repo-list-description">
-        
-          <p>在javascript正式进入ES6时代后，react的语法也与时俱进的进行了大革新。这让很多初学者出现对ES6的困惑，今天在此整理了一些ES5和ES6的写法对照表，互相学习共勉。<br>
-        
-      </div>
-      <p class="repo-list-meta">
-        <span class="meta-info">
-          <span class="octicon octicon-calendar"></span>
-           <time datetime="2016-02-14T09:08:23.000Z" itemprop="datePublished">2016-02-14</time>
-        </span>
+    </h3>
+    <div class="repo-list-description">
+      
+      <p>在javascript正式进入ES6时代后，react的语法也与时俱进的进行了大革新。这让很多初学者出现对ES6的困惑，今天在此整理了一些ES5和ES6的写法对照表，互相学习共勉。<br>
+      
+    </div>
+    <p class="repo-list-meta">
+      <span class="meta-info">
+        <span class="octicon octicon-calendar"></span>
+        <time datetime="2016-02-14T09:08:23.000Z" itemprop="datePublished">2016-02-14</time>
+      </span>
 
-        
-          <span class="meta-info">
-            <span class="octicon octicon-file-directory"></span>
-            <a href='/categories/javascript/' title=''>javascript</a>
-          </span>
-        
+      
+      <span class="meta-info">
+        <span class="octicon octicon-file-directory"></span>
+        <a href='/categories/javascript/' title=''>javascript</a>
+      </span>
+      
       
         <!--
           
-            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES5/">ES5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/">react</a></li></ul>
-          
-        -->
+      <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES5/">ES5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/">react</a></li></ul>
+      
+      -->
 
-      </p>
-    </div>
-  </article>
+    </p>
+  </div>
+</article>
             
-                  <article id="post-30分钟入门轻松架构flex框架" class="repo-list">
-    <div class="repo-list-item" >
-      <h3 class="repo-list-name" itemprop="name">
-        
+                <article id="post-30分钟入门轻松架构flex框架" class="repo-list">
+  <div class="repo-list-item">
+    <h3 class="repo-list-name" itemprop="name">
+      
   
       <a class="article-title" href="/2016/01/12/30分钟入门轻松架构flex框架/">10分钟入门flex,轻松搭建flex框架</a>
   
 
-      </h3>
-      <div class="repo-list-description">
-        
-          <h3 id="flex介绍"><a href="#flex介绍" class="headerlink" title="flex介绍"></a>flex介绍</h3><p>WEB布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性。对于PC端的网页来讲，确实游刃有余。<br>进入移动互联网之后，人们开始发现类似让图片居中的东东很难完美实现。<br>于是2010年W3C提出的一种新的方案——flex，目前在移动端已经广泛运用。类似腾讯的小程序weui，阿里的antui，等等都已经将flex纳入自己的UI框架中。<br>
-        
-      </div>
-      <p class="repo-list-meta">
-        <span class="meta-info">
-          <span class="octicon octicon-calendar"></span>
-           <time datetime="2016-01-12T12:44:37.000Z" itemprop="datePublished">2016-01-12</time>
-        </span>
+    </h3>
+    <div class="repo-list-description">
+      
+      <h3 id="flex介绍"><a href="#flex介绍" class="headerlink" title="flex介绍"></a>flex介绍</h3><p>WEB布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性。对于PC端的网页来讲，确实游刃有余。<br>进入移动互联网之后，人们开始发现类似让图片居中的东东很难完美实现。<br>于是2010年W3C提出的一种新的方案——flex，目前在移动端已经广泛运用。类似腾讯的小程序weui，阿里的antui，等等都已经将flex纳入自己的UI框架中。<br>
+      
+    </div>
+    <p class="repo-list-meta">
+      <span class="meta-info">
+        <span class="octicon octicon-calendar"></span>
+        <time datetime="2016-01-12T12:44:37.000Z" itemprop="datePublished">2016-01-12</time>
+      </span>
 
-        
-          <span class="meta-info">
-            <span class="octicon octicon-file-directory"></span>
-            <a href='/categories/css/' title=''>css</a>
-          </span>
-        
+      
+      <span class="meta-info">
+        <span class="octicon octicon-file-directory"></span>
+        <a href='/categories/css/' title=''>css</a>
+      </span>
+      
       
         <!--
           
-            <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UI框架/">UI框架</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flex/">flex</a></li></ul>
-          
-        -->
+      <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UI框架/">UI框架</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flex/">flex</a></li></ul>
+      
+      -->
 
-      </p>
-    </div>
-  </article>
+    </p>
+  </div>
+</article>
             
         </div>
         <div class="column one-third">

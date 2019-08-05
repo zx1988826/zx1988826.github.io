@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <p>在javascript正式进入ES6时代后，react的语法也与时俱进的进行了大革新。这让很多初学者出现对ES6的困惑，今天在此整理了一些ES5和ES6的写法对照表，互相学习共勉。<br><a id="more"></a></p>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <p>在javascript正式进入ES6时代后，react的语法也与时俱进的进行了大革新。这让很多初学者出现对ES6的困惑，今天在此整理了一些ES5和ES6的写法对照表，互相学习共勉。<br><a id="more"></a></p>
 <h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><blockquote>
 <p>引用</p>
 </blockquote>
@@ -354,21 +355,36 @@ class PauseMenu extends React.Component{
 &lt;/div&gt;
 </code></pre>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="在javascript正式进入ES6时代后，react..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="react-的ES5和ES6写法对比" data-title="react 的ES5和ES6写法对比" data-url="http://www.letzgo.ink/2016/02/14/react-的ES5和ES6写法对比/"></div>
 	<script type="text/javascript">
@@ -384,14 +400,14 @@ class PauseMenu extends React.Component{
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -402,9 +418,9 @@ class PauseMenu extends React.Component{
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#模块"><span class="toc-text">模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定义组件"><span class="toc-text">定义组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6带来的其它好处"><span class="toc-text">ES6带来的其它好处</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

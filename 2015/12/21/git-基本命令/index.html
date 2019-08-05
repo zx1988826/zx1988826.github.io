@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h4 id="git-基本"><a href="#git-基本" class="headerlink" title="git 基本"></a>git 基本</h4><pre><code class="bash">git仓库初始化：git init
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h4 id="git-基本"><a href="#git-基本" class="headerlink" title="git 基本"></a>git 基本</h4><pre><code class="bash">git仓库初始化：git init
 
 检出仓库：git clone
 
@@ -98,23 +99,38 @@ push分支到远程：$ git push origin [name]
 推送所有标签到远程：    git push origin --tags
 </code></pre>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="git 基本git仓库初始化：git init
 
 检出..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="git-基本命令" data-title="git-基本命令" data-url="http://www.letzgo.ink/2015/12/21/git-基本命令/"></div>
 	<script type="text/javascript">
@@ -130,14 +146,14 @@ push分支到远程：$ git push origin [name]
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -148,9 +164,9 @@ push分支到远程：$ git push origin [name]
 		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#git-基本"><span class="toc-text">git 基本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#分支-branch-操作相关命令"><span class="toc-text">分支(branch)操作相关命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#标签（tag）操作相关命令"><span class="toc-text">标签（tag）操作相关命令</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h3 id="使用闭包"><a href="#使用闭包" class="headerlink" title="使用闭包"></a>使用闭包</h3><pre><code class="js">(function($){
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h3 id="使用闭包"><a href="#使用闭包" class="headerlink" title="使用闭包"></a>使用闭包</h3><pre><code class="js">(function($){
     //Code goes here
 })(jQuery);
 </code></pre>
@@ -183,22 +184,37 @@ $(function() {
 </code></pre>
 <p>实现链式调用的关键点就一行代码return this，插件中加了这行代码，那么在插件执行完之后，就会把当前的jQuery对象返回，然后就可以在插件方法后面继续调用其它jQuery方法。</p>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="使用闭包(function($){
     //Cod..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="jquery开发规范" data-title="jquery开发规范" data-url="http://www.letzgo.ink/2016/02/17/jquery开发规范/"></div>
 	<script type="text/javascript">
@@ -214,14 +230,14 @@ $(function() {
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -232,9 +248,9 @@ $(function() {
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用闭包"><span class="toc-text">使用闭包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展"><span class="toc-text">扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#extend-对jquery本身进行扩展开发"><span class="toc-text">$.extend 对jquery本身进行扩展开发</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fn-extend-对象级别的扩展开发"><span class="toc-text">$.fn.extend 对象级别的扩展开发</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链式调用"><span class="toc-text">链式调用</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

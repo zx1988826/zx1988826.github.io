@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h3 id="flex介绍"><a href="#flex介绍" class="headerlink" title="flex介绍"></a>flex介绍</h3><p>WEB布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性。对于PC端的网页来讲，确实游刃有余。<br>进入移动互联网之后，人们开始发现类似让图片居中的东东很难完美实现。<br>于是2010年W3C提出的一种新的方案——flex，目前在移动端已经广泛运用。类似腾讯的小程序weui，阿里的antui，等等都已经将flex纳入自己的UI框架中。<br><a id="more"></a></p>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h3 id="flex介绍"><a href="#flex介绍" class="headerlink" title="flex介绍"></a>flex介绍</h3><p>WEB布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性。对于PC端的网页来讲，确实游刃有余。<br>进入移动互联网之后，人们开始发现类似让图片居中的东东很难完美实现。<br>于是2010年W3C提出的一种新的方案——flex，目前在移动端已经广泛运用。类似腾讯的小程序weui，阿里的antui，等等都已经将flex纳入自己的UI框架中。<br><a id="more"></a></p>
 <div class="tip">注意啦，目前flex仅仅推荐用在移动端，pc端还是乖乖的用盒状模型吧！万恶的IE👿</div> 
 
 <h3 id="flex布局语法"><a href="#flex布局语法" class="headerlink" title="flex布局语法"></a>flex布局语法</h3><p>好了，进入正题，下面的基础内容我摘录了<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="noopener">阮一峰的flex基础教程</a>。大家也可以去阮大大的博客去看，再后面我会讲到如何运用这些将你学到的这些flex封装成自己的flex布局框架。flex的布局语法，我会尽量用更容易懂的语言让大家理解。</p>
@@ -235,21 +236,36 @@
 </code></pre>
 <p>看看最终的效果，是不是你想要的？<br><img src="http://ohwq8bodu.bkt.clouddn.com/blog/BE629B21-2F06-458F-A05B-DF3861D6BA1E.png" alt><br>接下来，在此基础上扩展属于你自己的UI框架吧!</p>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="flex介绍WEB布局的传统解决方案，基于盒状模型，依..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="30分钟入门轻松架构flex框架" data-title="10分钟入门flex,轻松搭建flex框架" data-url="http://www.letzgo.ink/2016/01/12/30分钟入门轻松架构flex框架/"></div>
 	<script type="text/javascript">
@@ -265,14 +281,14 @@
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -283,9 +299,9 @@
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#flex介绍"><span class="toc-text">flex介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex布局语法"><span class="toc-text">flex布局语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex基本用法"><span class="toc-text">flex基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex基本概念"><span class="toc-text">flex基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex容器属性"><span class="toc-text">flex容器属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-direction"><span class="toc-text">flex-direction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-wrap"><span class="toc-text">flex-wrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#justify-content"><span class="toc-text">justify-content</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#align-items"><span class="toc-text">align-items</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#align-content"><span class="toc-text">align-content</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex项目属性"><span class="toc-text">flex项目属性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#order"><span class="toc-text">order</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-grow"><span class="toc-text">flex-grow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-shrink"><span class="toc-text">flex-shrink</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex-basis"><span class="toc-text">flex-basis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#flex"><span class="toc-text">flex</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#align-self"><span class="toc-text">align-self</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建简单的flex框架"><span class="toc-text">搭建简单的flex框架</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

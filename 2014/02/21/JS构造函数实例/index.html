@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h3 id="构造函数定义"><a href="#构造函数定义" class="headerlink" title="构造函数定义"></a>构造函数定义</h3><blockquote>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h3 id="构造函数定义"><a href="#构造函数定义" class="headerlink" title="构造函数定义"></a>构造函数定义</h3><blockquote>
 <p>JS的构造函数在设计之初一直有不少坑，很多人难以理解它的设计模式，这里将本人对JS的构造函数的理解分享给大家，如果有错误请指正。  </p>
 <p><strong>构造函数的定义</strong>：对象自身所带的属性。  </p>
 <p><strong>构造函数的作用</strong>：当对象被实例化后，构造函数会立即执行它所包含的任何代码</p>
@@ -167,22 +168,37 @@ Atest.age = 20;//公有静态属性不能使用 【this.属性】，只能使用
    //ps:尽量将方法定义为原型方法，原型方法避免了每次调用构造函数时对属性或方法的构造，节省空间,创建对象快.
 </code></pre>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="构造函数定义
 JS的构造函数在设计之初一直有不少坑，很..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="JS构造函数实例" data-title="JS构造函数实例" data-url="http://www.letzgo.ink/2014/02/21/JS构造函数实例/"></div>
 	<script type="text/javascript">
@@ -198,14 +214,14 @@ JS的构造函数在设计之初一直有不少坑，很..."></div>
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -216,9 +232,9 @@ JS的构造函数在设计之初一直有不少坑，很..."></div>
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#构造函数定义"><span class="toc-text">构造函数定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造函数使用"><span class="toc-text">构造函数使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-对象方法"><span class="toc-text">1.对象方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-原型方法（prototype）"><span class="toc-text">2.原型方法（prototype）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-类方法（静态方法直接调用）"><span class="toc-text">3.类方法（静态方法直接调用）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#完整测试代码"><span class="toc-text">完整测试代码</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta charset="utf-8">
@@ -59,10 +60,10 @@
     </div>
 </section>
 	<section class="container">
-    <div class="columns">
-        <div class="column three-fourths" >
-            <article class="article-content markdown-body">
-                <h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><h4 id="封装，Prototype模式"><a href="#封装，Prototype模式" class="headerlink" title="封装，Prototype模式"></a>封装，Prototype模式</h4><p>Javascript规定，每一个构造函数都有一个<strong>prototype属性</strong>，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。这意味着，我们可以把那些不变的属性和方法，直接定义在prototype对象上。<br><a id="more"></a></p>
+  <div class="columns">
+    <div class="column three-fourths">
+      <article class="article-content markdown-body">
+        <h3 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h3><h4 id="封装，Prototype模式"><a href="#封装，Prototype模式" class="headerlink" title="封装，Prototype模式"></a>封装，Prototype模式</h4><p>Javascript规定，每一个构造函数都有一个<strong>prototype属性</strong>，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。这意味着，我们可以把那些不变的属性和方法，直接定义在prototype对象上。<br><a id="more"></a></p>
 <pre><code class="javascript">function Cat(name,color){
     this.name = name;
     this.color = color;
@@ -199,21 +200,36 @@ var x = f();
 x // undefined
 </code></pre>
 
-            </article>
-            
-                <div class="share">
-                    <!--开启分享-->
+      </article>
+      
+      <div class="share">
+        <!--开启分享-->
 <div class="share-component" data-disabled="google,twitter,facebook" data-description="面向对象封装，Prototype模式Javascrip..."></div>
 
 <script src="/js/share.min.js"></script>
 
-                </div>    
-            
+      </div>
+      
 
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'df246534bc008055dc1a',
+    clientSecret: '93cc10fc1edb7218184ae3b0111426e2bdb33995',
+    id: window.location.pathname,
+    repo: 'blogtalk',
+    owner: 'zx1988826',
+    admin: 'zx1988826'
+  })
+  gitalk.render('gitalk-container')
+</script>
+
+      
             
-            
-                
-                    
+      
+      
 <div class="comments">
 	<div class="ds-thread" data-thread-key="js原理进阶" data-title="js原理进阶" data-url="http://www.letzgo.ink/2014/08/02/js原理进阶/"></div>
 	<script type="text/javascript">
@@ -229,14 +245,14 @@ x // undefined
 	</script>
 </div>
 
-                
+      
             
 
-        </div>
-        <div class="column one-fourth">
-            
-                
-                
+    </div>
+    <div class="column one-fourth">
+      
+      
+      
 
 
 <h3>Post Directory</h3>
@@ -247,9 +263,9 @@ x // undefined
 		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象"><span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#封装，Prototype模式"><span class="toc-text">封装，Prototype模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Prototype模式的验证方法"><span class="toc-text">Prototype模式的验证方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#构造函数的继承"><span class="toc-text">构造函数的继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#非构造函数的继承"><span class="toc-text">非构造函数的继承</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined与null的区别"><span class="toc-text">undefined与null的区别</span></a></li></ol>
 	</section>
 </div>
-            
-        </div>
+      
     </div>
+  </div>
 </section>
 
 <footer class="container">
