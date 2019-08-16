@@ -9,7 +9,7 @@
 
   <link rel="icon" href="/favicon.ico">
   
-  <title>鱿鱼由于有雨忧郁 - Github Repository</title>
+  <title>鱿鱼由于有雨忧郁</title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox-1.3.4.css">
   <!--在这里倒入jquery 方便处理部分页面的jquery-->
@@ -25,108 +25,90 @@
               <a href="/"  class=" site-header-nav-item hvr-underline-from-center" title="首页">首页</a>
         
               
-              <a href="/categories/"  class=" site-header-nav-item hvr-underline-from-center" title="分类">分类</a>
+              <a href="/categories/"  class=" selected  site-header-nav-item hvr-underline-from-center" title="分类">分类</a>
         
       </nav>
   </div>
 </header>
 
-	  <section class="container">
-      <header class="text-center">
-          <h1>Github Repository</h1>
-          <p class="lead">I have <span id="repo-count">0</span> projects on Github</p>
-      </header>
-      <div class="repo-list">
-        <div class="blankslate"><h3>Loading...</h3></div>
-      </div>
-  </section>
+	
+<section class="collection-head geopattern lll" data-pattern-id="后端" >
+    <div class="container">
+        <div class="collection-title">
+            <h1 class="collection-header">
+                后端
+            </h1>
+            
+        </div>
+    </div>
+</section>
+	<section class="container">
+  <div class="columns">
+    <div class="column two-thirds">
+      <article class="article-content markdown-body">
+        <section class="posts-content">
+          
+          <ol class="posts-list">
+            
+            
+            
+            <li class="posts-list-item">
+              <span class="posts-list-meta">
+                <time datetime="2017-09-15T06:01:37.000Z" itemprop="datePublished">2017-09-15</time>
+              </span>
+              
+  
+      <a class="posts-list-name" href="/2017/JSON Web Token 跨域认证解决方案/">JSON Web Token 跨域认证解决方案</a>
+  
 
-<!--Github项模版-->
-<script type="text/template" id="list-template">
-    <li class="collection-card">
-      <a href="{%=clone_url%}" class="card text-center" target="_blank">
-          <div class="thumbnail" style="margin-bottom:0px">
-              <div class="card-image geopattern" data-pattern-id="{%=name%}">
-                  <div class="card-image-cell">
-                       <h3 class="card-title">
-                          {%=name%}
-                        </h3>
-       
-                  </div>
-              </div>
-              <div class="caption">
-                  <div class="card-description">
-                      <p class="card-text">{%=description%}</p>
-                  </div>
-                  <div class="card-text">
-                    <span class="meta-info tooltipped tooltipped-n" aria-label="{%=stargazers_count%} stars">
-                    <span class="octicon octicon-star"></span> {%=stargazers_count%}</span> <span class="meta-info tooltipped tooltipped-n" aria-label="{%=forks_count%} forks">
-                    <span class="octicon octicon-git-branch"></span> {%=forks_count%}</span> <span class="meta-info tooltipped tooltipped-n" aria-label="最后更新时间：{%=updated_at%}">
-                    <span class="octicon octicon-clock"></span>
-                      <time datetime="{%=updated_at%}">{%=updated_at%}</time>
-                    </span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </li>
+            </li>
+            
+            
+                            
+          </ol>
+          
+                </section>
+            </article>
+        </div>
+        <div class="column one-third">
+            <h3>关键字搜索</h3>
 
-</script>
+<div id="site_search">
 
-<script src="/js/baiduTemplate.js"></script>
-<!--获取失败模版-->
-<script type="text/template" id="error-template">
-  <div class="blankslate"><h3>加载失败</h3><p>请刷新或稍后再试...</p>></div>
-</script>
-<script type="text/javascript">
+  <!-- Google -->
+  
+
+  <!-- 本地搜索 -->
+  
+  <!-- Local -->
+  <form id="search-form">
+    <input type="text" id="search" placeholder="Search" style="width: 253px;">
+    <button type="button" class="btn btn-default" id="site_search_do"><span
+        class="octicon octicon-search"></span></button>
+  </form>
+
+  <div id="local-search-result"></div>
+
+  
+
+</div>
+          
+<h3>标签</h3>
+<div id="blog-categories">
+  <ul class="list-group">
     
-  var open = function(){
+    <li class="list-group-item">
+      跨域
+      <span class="badge">1</span>
+    </li>
+    
+  </ul>
+</div>
 
-    var baiduTpl = new Object();
+    </div>
+  </div>
+</section>
 
-    var handleTpl = function(){
-      baiduTpl.list = baidu.template("list-template");
-      baiduTpl.error = baidu.template("error-template");
-    };
-
-    var handleGithub = function(){
-      var repoContainer = $('.repo-list');
-      var errorContainer = repoContainer.find(".blankslate")
-      var countContainer = $("#repo-count");
-
-      $.get("https://api.github.com/users/zx1988826/repos",function(result){
-          if(result){
-            errorContainer.remove();
-            countContainer.text(result.length); //设置项目个数
-            var ul = $("<ul class='collection-listing clearfix'></ul>");
-            for(var i in result){
-              var repo = result[i];
-              repo.updated_at = repo.updated_at.substring(0,repo.updated_at.lastIndexOf("T"));
-              var html = baiduTpl.list(repo);
-              ul.append(html); 
-            }
-            repoContainer.append(ul);
-            $(".geopattern").each(function(){     
-              $(this).geopattern($(this).data('pattern-id'));
-            });
-          }else{
-            errorContainer.remove();
-            countContainer.append(baiduTpl.error());
-          }
-      });
-    };
-
-    return {
-      init : function(){
-        handleTpl();
-        handleGithub();
-      }
-    }
-  };
-
-  $(open().init);
-
-</script>
 <footer class="container">
     <div class="site-footer" role="contentinfo">
         <div class="copyright left mobile-block">
